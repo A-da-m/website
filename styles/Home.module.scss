@@ -33,6 +33,7 @@
             display: grid;
             grid-template-columns: auto auto;
             gap: 10px;
+            font-size: 1.8rem;
           }
         }
         .titles {
@@ -52,8 +53,12 @@
       justify-content: center;
       padding: 5rem;
       height: 75vh;
-      background: $primary;
+      min-height: 480px;
+      background: $hero-light;
 
+      @media (prefers-color-scheme: dark) {
+        background: $hero-dark;
+      }
       @media (max-width: 500px) {
         padding: 2rem;
       }
@@ -120,7 +125,7 @@
           }
           margin-bottom: 0.55rem;
           width: 100%;
-          background: #E5F1F8;
+          background: $card-light;
           padding: 1rem;
           border-radius: 10px;
 
@@ -128,6 +133,10 @@
             font-size: 0.8rem;
             font-weight: 400;
             color: #007BC3;
+          }
+
+          @media (prefers-color-scheme: dark) {
+            background: $card-dark;
           }
         }
       }
@@ -146,7 +155,10 @@
           margin-bottom: 0.55rem;
           margin-right: 0.55rem;
           padding: 1rem;
-          background: #E5F1F8;
+          background: $card-light;
+          @media (prefers-color-scheme: dark) {
+            background: $card-dark;
+          }
         }
       }
     }

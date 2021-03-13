@@ -1,6 +1,6 @@
 import {
-  faGithubSquare,
-  faTwitterSquare
+  faGithub,
+  faTwitter
 } from '@fortawesome/free-brands-svg-icons'
 import { faChevronDown, faChevronRight } from '@fortawesome/pro-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,7 +31,32 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>a-da-m.me</title>
-      </Head>
+				<meta name='title' content='a-da-m.me' />
+				<meta
+					name='description'
+					content='Making websites & applications with you in mind.'
+				/>
+				<meta name='theme-color' content='#000000' />
+
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://a-da-m.me' />
+				<meta property='og:title' content='a-da-m.me' />
+				<meta
+					property='og:description'
+					content='Making websites & applications with you in mind.'
+				/>
+				<meta property='og:image' content='/banner.png' />
+
+				<meta property='twitter:card' content='summary_large_image' />
+				<meta property='twitter:url' content='https://a-da-m.me' />
+				<meta property='twitter:title' content='a-da-m.me' />
+				<meta
+					property='twitter:description'
+					content='Making websites & applications with you in mind.'
+				/>
+				<meta property='twitter:image' content='/banner.png' />
+
+			</Head>
 
       <main className={styles.main}>
         <div className={styles.hero}>
@@ -40,10 +65,10 @@ export default function Home() {
               <h3>Adam</h3>
               <div className={styles.icons}>
                 <a href='https://twitter.com/_A_D__A_M_'>
-                  <FontAwesomeIcon icon={faTwitterSquare} size={'2x'} />
+                  <FontAwesomeIcon icon={faTwitter}  />
                 </a>
                 <a href='https://github.com/A-da-m'>
-                  <FontAwesomeIcon icon={faGithubSquare}  size={'2x'} />
+                  <FontAwesomeIcon icon={faGithub}  />
                 </a>
               </div>
             </div>
