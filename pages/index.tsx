@@ -10,11 +10,6 @@ import styles from '../styles/Home.module.scss'
 const qualifications = ['Passion for Technology and People', 'Communications Skills', 'Listening Skills', 'Software & Programming', 'Fast Learner', 'Customer Service', 'Detail Oriented', 'Self-motivated']
 const skills = ['TypeScript/JavaScript', 'ReactJS', 'CSS/SCSS', 'React Native', 'Electron',  'PostgresSQL/MySQL', 'Ionic Framework/CapacitorJS', 'Golang']
 const projects = [{
-	name: 'Octii',
-	time: '2020-Present',
-	description: 'Octii is a chat app focused on simplicity, privacy, and extensibility.',
-	link: 'https://octii.chat'
-}, {
 	name: 'Tailosive Website',
 	time: '2019-2020',
 	description: 'Links to all the Tailosive Network Twitter, YouTube, and Twitch accounts.',
